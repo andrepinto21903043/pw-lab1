@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <title>PW Lab2</title>
+        <meta name="author" content="André Pinto">
+        <meta name="keywords" content="Miami">
+        <meta name="description" content="Website sobre Miami"> 
+        <link rel="shorcut icon" type="image/x-icon" href="images/huanhuan.ico" />
+    </head>
+    <body style="background-color: moccasin">
+        <h1>Miami</h1>
+        <a><img src="images/miami.png" alt="miami" style="width:300px;"></a><br>
+        <p><a href="index.html"><b>Introdução</b></a> | 
+            <a href="local.html">Localização</a> |
+            <a href="multimedia.html">Multimédia</a> | 
+            <a href="info.html">Informações</a> | 
+            <a href="quizz.html"><b>Quizz</b></a> | 
+            <a href="comentarios.html">Comentários</a> | 
+            <a href="../index.html">Home (indice geral dos laboratórios)</a>
+        </p>
+        <h3>Quizz</h3>
+        <form method="post" action="mailto:andremiguel3006@gmail.com" autocomplete="on">
+            <fieldset>
+                <legend>Sobre ti:</legend>
+                <label for="fname">Nome: </label>
+                <input type="text" id="fname" name="fname" placeholder="Insira Nome" autofocus required><br>
+                <label for="lname">Apelido: </label>
+                <input type="text" id="lname" name="lname" placeholder="Insira Apelido"><br>
+                <label for="dateB">Data de Nascimento: </label>
+                <input type="date" id="dateB" name="dateB" placeholder="yyyy-mm-dd"><br>
+                <label for="email">Email: </label>
+                <input type="email " id="email" name="email" placeholder="Insira Email"><br>
+            </fieldset> 
+            <fieldset>
+                <legend>Quizz</legend>
+                <label for="res0">Qual o estado que pertence Miami?</label><br>
+                <input type="text" id="res0" name="res0" placeholder="Insira a sua resposta"><br>
+
+
+                <label for="res1">Qual o continente que pertence Miami?</label><br>
+                <input type="radio" id="res1" name="res1" value="Ásia">
+                <label for="Ásia">Ásia</label><br>
+                <input type="radio" id="res1" name="res1" value="América">
+                <label for="América">América</label><br>
+                <input type="radio" id="res1" name="res1" value="Europa">
+                <label for="Europa">Europa</label><br>
+                <input type="radio" id="res1" name="res1" value="África">
+                <label for="África">África</label><br>
+
+                <label for="res2">O que mais gostavas de conhecer em Miami?</label><br>
+                <input type="checkbox" id="Praias" name="Praias" value="Praias">
+                <label for="Praias"> Praias</label><br>
+                <input type="checkbox" id="Cultura" name="Cultura" value="Cultura">
+                <label for="Cultura"> Cultura</label><br>
+                <input type="checkbox" id="VidaNoturna" name="VidaNoturna" value="VidaNoturna">
+                <label for="VidaNoturna"> Vida Noturna</label><br><br>
+
+                <label for="res3">Que cor te faz lembrar Miami?</label><br>
+                <input type="color" id="res3" name="res3" value="#ff0000"><br>
+
+                <label for="area">Qual a área geográfica aproximadamente de Miami? (em km<sup>2</sup>)</label>
+                <input type="number" id="quantity" name="quantity" min="5" max="500" step="20"><br>       
+               
+                <label for="populaçao">Média de População em Miami:</label>
+                <input type="range" id="populaçao" name="populaçao" min="0" max="500000" value="0" oninput="taxaN.value = parseInt(populaçao.value)">
+                <output name="taxaN" for="populaçao">0</output> habitantes
+            </fieldset>
+            <input type="image" src="images/submit.png" alt="Submit" width="48" height="48"> or <input type="submit" value="Submit">
+          </form>
+    </body>
+</html>
