@@ -1,0 +1,64 @@
+body {
+    background-color: moccasin;
+    font-family: Copperplate, Papyrus, fantasy;
+}
+
+h1 {
+    text-align: center;
+    font-size: 5.0em;
+    color: rgb(8, 166, 214);
+}
+
+h3 {
+    font-size: 2.3em;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    background-color:rgba(255, 162, 0, 0.308); 
+    text-align: center;
+}
+
+nav p a:link {
+    padding: 2px 10px;
+     display: inline-block;
+     background-color:#ffcc89;
+     color: rgb(36, 36, 36);
+     text-decoration: none;
+     border-bottom:3px solid #79ceff;
+ }
+ nav p a:visited {
+    padding: 2px 10px;
+     display: inline-block;
+     background-color:#d68e08;
+     color: rgb(36, 36, 36);
+     text-decoration: none;
+     border-bottom:3px solid #79ceff;
+ }
+   
+ nav p a:hover {
+     background-color:#81d1f7;
+     color: #272626;
+     border-bottom:3px solid #EA0000;
+ }
+
+ nav p a:active {
+    padding: 2px 10px;
+     display: inline-block;
+     background-color:#158dd3;
+     color: rgb(36, 36, 36);
+     text-decoration: none;
+     border-bottom:3px solid #79ceff;
+ }
+
+ p::first-letter {
+    color: #080808;
+    font-size: 1.3em;
+  }
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
