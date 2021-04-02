@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta name="viewport" content="width=device-width, 
+        initial-scale=1.0" charset="UTF-8">
+        <title>PW Lab2</title>
+        <meta name="author" content="André Pinto">
+        <meta name="keywords" content="Miami">
+        <meta name="description" content="Website sobre Miami"> 
+        <link rel="shorcut icon" type="image/x-icon" href="images/huanhuan.ico" />
+        <link rel="stylesheet" href="estilos.css">
+    </head>
+    <body style="background-color: moccasin">
+        <header>
+            <h1>Miami</h1>
+            <figure>
+                <img src="images/miami.png" alt="miami" class="center" style="width:300px;">
+            </figure>
+            <br>
+        </header>
+        
+        <nav>
+            <p><a href="index.html">Introdução</a><br><br>
+                <a href="local.html">Localização</a><br><br>
+                <a href="multimedia.html">Multimédia</a><br><br>
+                <a href="info.html">Informações</a><br><br>
+                <a href="html5-css.html">HTML5-CSS</a><br><br>
+                <a href="quizz.html">Quizz</a><br><br>
+                <a class="active" href="comentarios.html"><b>Comentários</b></a><br><br>
+                <a href="../index.html">Home (indice geral dos laboratórios)</a><br><br>
+            </p>
+        </nav>
+        
+        <main>
+            <section>
+                <h3>Comentários</h3>
+                <form method="post" action="mailto:andremiguel3006@gmail.com" oninput="media.value = ((parseInt(opiniao1.value)+parseInt(opiniao2.value)+parseInt(opiniao3.value))*100)/9">
+                    <fieldset>
+                        <legend>Deixe aqui a sua opinião sobre o Website:</legend>
+                        <p>1-Fraco 2-Médio 3-Muito Bom</p>
+                        <p>Clareza:
+                        <input type="radio" id="op1" name="opiniao1" value="1">
+                        <label for="op1">1</label>
+                        <input type="radio" id="op2" name="opiniao1" value="2">
+                        <label for="op2">2</label>
+                        <input type="radio" id="op3" name="opiniao1" value="3">
+                        <label for="op3">3</label><br></p>
+
+                        <p>Informação:
+                        <input type="radio" id="op4" name="opiniao2" value="1">
+                        <label for="op4">1</label>
+                        <input type="radio" id="op5" name="opiniao2" value="2">
+                        <label for="op5">2</label>
+                        <input type="radio" id="op6" name="opiniao2" value="3">
+                        <label for="op6">3</label><br></p>
+
+                        <p>Criatividade:
+                        <input type="radio" id="op7" name="opiniao3" value="1">
+                        <label for="op7">1</label>
+                        <input type="radio" id="op8" name="opiniao3" value="2">
+                        <label for="op8">2</label>
+                        <input type="radio" id="op9" name="opiniao3" value="3">
+                        <label for="op9">3</label><br></p>
+                
+                        <p>Média da sua Avaliação: <output name="media" for="opiniao1 opiniao2 opiniao3"></output>%</p>
+                        
+
+                        <p>O que mais gostaste no site?<br>
+                        <input type="checkbox" id="localização" name="localizaçao" value="localizaçao">
+                        <label for="localizaçao"> Página de Localização</label><br>
+                        <input type="checkbox" id="multimédia" name="multimedia" value="multimedia">
+                        <label for="multimedia"> Página de Multimédia</label><br>
+                        <input type="checkbox" id="informaçao" name="informaçao" value="informaçao">
+                        <label for="informaçao"> Página de Informação</label><br></p>
+
+                        <p>Comentários:<br>
+                        <textarea name="message" rows="6" cols="50"></textarea></p>
+                        <p>Gostou do Questionário? (1 a 5)<br>
+                        <input type="range" id="avaliacao" name="avaliacao" min="0" max="5" value="0" oninput="taxaN.value = parseInt(avaliacao.value)">
+                        <output name="taxaN" for="populaçao">0</output>
+                        </p>
+                        
+                    </fieldset>
+                    <input type="submit" value="Submit">
+                </form>
+            </section>
+        </main>
+        
+        <footer>
+            <p>André Pinto - 21903043 - Universidade Lusófona de Humanidades e Tecnologias - 2º ano</p>
+        </footer>
+        
+    </body>
+</html>
